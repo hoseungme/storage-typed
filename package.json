@@ -4,7 +4,7 @@
   "description": "Web Storage wrapper that provides automatic JSON parsing/stringifying and type-specific features.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/HoseungJang/typed-storage/issues"
   },
-  "homepage": "https://github.com/HoseungJang/typed-storage#readme"
+  "homepage": "https://github.com/HoseungJang/typed-storage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^28.1.1",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0"
+  }
 }
