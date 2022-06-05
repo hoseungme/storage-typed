@@ -1,0 +1,26 @@
+{
+  "name": "typed-storage",
+  "version": "0.0.0",
+  "description": "Web Storage wrapper that provides automatic JSON parsing/stringifying and type-specific features.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoseungJang/typed-storage.git"
+  },
+  "keywords": [
+    "web",
+    "storage",
+    "storage-cover",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "author": "HoseungJang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HoseungJang/typed-storage/issues"
+  },
+  "homepage": "https://github.com/HoseungJang/typed-storage#readme"
+}
