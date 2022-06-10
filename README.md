@@ -27,7 +27,7 @@ const arr = JSON.parse(window.localStorage.getItem(key));
 window.localStorage.setItem(key, JSON.stringify([...arr, value]));
 ```
 
-So `storage-typed` provides all things above.
+So `storage-typed` resolves all things above.
 
 ```typescript
 const count = TypedStorageFactory.create("count", 0); // NumberTypedStorage
