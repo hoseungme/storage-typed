@@ -1,4 +1,4 @@
-## typedstorage
+## storage-typed
 
 Web Storage only accepts string value so you should write this verbose code everytime:
 
@@ -27,7 +27,7 @@ const arr = JSON.parse(window.localStorage.getItem(key));
 window.localStorage.setItem(key, JSON.stringify([...arr, value]));
 ```
 
-So `typedstorage` provides all things above.
+So `storage-typed` provides all things above.
 
 ```typescript
 const count = TypedStorageFactory.create("count", 0); // NumberTypedStorage
