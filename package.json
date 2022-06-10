@@ -1,6 +1,6 @@
 {
   "name": "storage-typed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web Storage wrapper that provides automatic JSON parsing/stringifying and type-specific features.",
   "main": "./dst/index.js",
   "files": [
