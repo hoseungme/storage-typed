@@ -16,14 +16,14 @@ describe("TypedStorage", () => {
     });
   });
 
-  describe("When getting", () => {
+  describe("When calling get", () => {
     it("should return current value", () => {
       const typed = new TypedStorage(generateRandomKey(), ["foo"]);
       expect(typed.get()).toEqual(["foo"]);
     });
   });
 
-  describe("When setting", () => {
+  describe("When calling set", () => {
     it("should change current value into given new value", () => {
       const typed = new TypedStorage(generateRandomKey(), "foo");
       typed.set("bar");

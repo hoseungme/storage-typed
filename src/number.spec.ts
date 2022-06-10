@@ -2,7 +2,7 @@ import { NumberTypedStorage } from "./number";
 import { generateRandomKey } from "./__test__/helper";
 
 describe("NumberTypedStorage", () => {
-  describe("When increasing", () => {
+  describe("When calling increase", () => {
     it("should add 1 to current value", () => {
       const typed = new NumberTypedStorage(generateRandomKey(), 0);
       typed.increase();
@@ -10,7 +10,7 @@ describe("NumberTypedStorage", () => {
     });
   });
 
-  describe("When decreasing", () => {
+  describe("When calling decrease", () => {
     it("should subtract 1 from current value", () => {
       const typed = new NumberTypedStorage(generateRandomKey(), 0);
       typed.decrease();
