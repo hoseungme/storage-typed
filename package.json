@@ -4,7 +4,8 @@
   "description": "Web Storage wrapper that provides automatic JSON parsing/stringifying and type-specific features.",
   "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rm -rf dst && tsc"
   },
   "repository": {
     "type": "git",
