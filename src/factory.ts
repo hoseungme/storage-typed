@@ -1,6 +1,7 @@
 import { TypedStorage, TypedStorageOptions } from "./any";
 import { NumberTypedStorage } from "./number";
 import { ArrayTypedStorage } from "./array";
+import { BooleanTypedStorage } from "./boolean";
 
 export class TypedStorageFactory {
   public static create<T extends number>(
@@ -8,6 +9,11 @@ export class TypedStorageFactory {
     initialValue: T,
     options?: TypedStorageOptions<T>
   ): NumberTypedStorage;
+  public static create<T extends boolean>(
+    key: string,
+    initialValue: T,
+    options?: TypedStorageOptions<T>
+  ): BooleanTypedStorage;
   public static create<T extends any[]>(
     key: string,
     initialValue: T,
@@ -19,6 +25,10 @@ export class TypedStorageFactory {
 
     if (valueType === "number") {
       return new NumberTypedStorage(key, initialValue, options);
+    }
+
+    if (valueType === "boolean") {
+      return new BooleanTypedStorage(key, initialValue, options);
     }
 
     if (valueType === "object" && initialValue instanceof Array) {
