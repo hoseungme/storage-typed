@@ -1,6 +1,7 @@
 import { TypedStorageFactory } from "./factory";
-import { NumberTypedStorage } from "./number";
 import { TypedStorage } from "./any";
+import { NumberTypedStorage } from "./number";
+import { ArrayTypedStorage } from "./array";
 import { generateRandomKey } from "./__test__/helper";
 
 describe("TypedStorageFactory", () => {
@@ -8,6 +9,13 @@ describe("TypedStorageFactory", () => {
     it("should return instance of NumberTypedStorage", () => {
       const typed = TypedStorageFactory.create(generateRandomKey(), 0);
       expect(typed).toBeInstanceOf(NumberTypedStorage);
+    });
+  });
+
+  describe("When creating with array value", () => {
+    it("should return instance of ArrayTypedStorage", () => {
+      const typed = TypedStorageFactory.create(generateRandomKey(), []);
+      expect(typed).toBeInstanceOf(ArrayTypedStorage);
     });
   });
 
