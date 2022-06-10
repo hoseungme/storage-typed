@@ -1,17 +1,21 @@
 {
-  "name": "typed-storage",
-  "version": "0.0.0",
+  "name": "typedstorage",
+  "version": "1.0.0",
   "description": "Web Storage wrapper that provides automatic JSON parsing/stringifying and type-specific features.",
-  "main": "index.ts",
+  "main": "./dst/index.js",
+  "files": [
+    "dst"
+  ],
   "scripts": {
     "test": "jest",
     "build": "rm -rf dst && tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HoseungJang/typed-storage.git"
+    "url": "git+https://github.com/HoseungJang/typedstorage.git"
   },
   "keywords": [
+    "typedstorage",
     "web",
     "storage",
     "storage-cover",
@@ -21,9 +25,9 @@
   "author": "HoseungJang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HoseungJang/typed-storage/issues"
+    "url": "https://github.com/HoseungJang/typedstorage/issues"
   },
-  "homepage": "https://github.com/HoseungJang/typed-storage#readme",
+  "homepage": "https://github.com/HoseungJang/typedstorage#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
